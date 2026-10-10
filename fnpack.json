@@ -1,0 +1,46 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "WorkBuddy2API-Hub FnDepot 源",
+    "author": "ccrabit",
+    "homepage": "https://github.com/ccrabit/workbuddy2api-hub",
+    "description": "WorkBuddy2API-Hub 的 FnDepot 外部应用源（第三方自建，与 FnDepot 项目及官方无关）。"
+  },
+  "apps": {
+    "workbuddy2api": {
+      "display_name": "WorkBuddy2API-Hub",
+      "desc": "WorkBuddy 账号池网关：把多个 WorkBuddy/CodeBuddy 账号聚合成 OpenAI 兼容 API，在飞牛应用中心里通过统一网关免密打开，并带账号导入导出、用量与积分的 Web 看板。",
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "AI赋能",
+        "系统工具"
+      ],
+      "icon_url": "./ICON.PNG",
+      "readme_url": "./README.md",
+      "bug_report_url": "https://github.com/ccrabit/workbuddy2api-hub/issues",
+      "maintainer": "ardeyouxipianyi",
+      "maintainer_url": "https://github.com/ardeyouxipianyi/workbuddy2api-hub",
+      "distributor": "ccrabit",
+      "distributor_url": "https://github.com/ccrabit",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8788",
+      "releases": {
+        "1.6.19": {
+          "changelog": "首个飞牛上架版本：应用本体同步上游 v1.6.11–v1.6.19 及 v1.6.19 之后的提交（面板三页拆分、账号页可独立成菜单与签到活跃看板、表头排序、剩余用量优先调度等），飞牛侧保留统一网关免密入口、主题与移动端适配。安装包为多架构合一包，从本应用主仓库的 GitHub Release 资产下载。",
+          "updated_at": "2026-10-11T00:40:00+08:00",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.6.19/WorkBuddy2API-Hub_1.6.19_all.fpk",
+              "sha256": "e65dcb844df7ede523e990c33e3e661e27d6c73e0a9770592d76e006d610505d",
+              "size": 626248
+            }
+          }
+        }
+      }
+    }
+  }
+}
