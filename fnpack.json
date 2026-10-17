@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.6.19": {
-          "changelog": "首个飞牛上架版本：应用本体同步上游 v1.6.11–v1.6.19 及 v1.6.19 之后的提交（面板三页拆分、账号页可独立成菜单与签到活跃看板、表头排序、剩余用量优先调度等），飞牛侧保留统一网关免密入口、主题与移动端适配。安装包为多架构合一包，从本应用主仓库的 GitHub Release 资产下载。",
-          "updated_at": "2026-10-11T00:40:00+08:00",
+        "1.7.10": {
+          "changelog": "同步上游 v1.7.4 ~ v1.7.10：可选 SQLite 日志落库与三维轮转、数据看板 Bento 重构与 Claude 暖色主题、模型目录一键刷新与自动续拉、后台模型原子重定向、熔断时间窗与账号池一键测试/一键打卡、网页通道重试、每 API Key 独立并发上限、6004 后可按开关回退 deepseek-v4.1-flash-sg 等；飞牛侧保留统一网关免密入口、主题与移动端适配，并把 v1.7.5 起的模型目录存档落到可写数据目录。",
+          "updated_at": "2026-10-16T21:18:00+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.6.19/WorkBuddy2API-Hub_1.6.19_all.fpk",
-              "sha256": "e65dcb844df7ede523e990c33e3e661e27d6c73e0a9770592d76e006d610505d",
-              "size": 626248
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.10/WorkBuddy2API-Hub_1.7.10_all.fpk",
+              "sha256": "7d8cc1d800f4482e4f573587c5cbbe69ee4c61b988fc710317833f96562d4809",
+              "size": 800307
             }
           }
         }
