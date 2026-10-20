@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.7.13": {
-          "changelog": "同步上游 v1.7.11 ~ v1.7.13：用量明细三维度统一「消耗积分」列并提升深色模式对比度、按账号精确禁用个别模型、日志与「最近请求」显示发起方 API Key、软限流阶梯补时间窗与秒级剩余时间、调度巡检账号间随机错峰、请求结束按上游回包 credit 立即扣减余额（低积分护栏不再失效）、便携包补回 console_tail.py 与 pythonw.exe、日志按钮改为新窗口打开、关闭服务用 /health 复核、OpenWrt 依赖补齐等；飞牛侧跟上新增的 wb_quota_scan / wb_window_probe / wb_update_request 三个顶层模块与 tools//ops/ 目录，统一网关免密入口与可写模型目录存档照旧。",
-          "updated_at": "2026-10-18T19:00:13+08:00",
+        "1.7.17": {
+          "changelog": "同步上游 v1.7.14 ~ v1.7.17：流式断流在首字节之前同账号同出口自动重开一次、出口退避改按「流读完」记账；流式 usage 按 OpenAI 契约放到末尾空 choices 帧（严格客户端不再提前结束）；模型级 5xx（11134/11102/11150/11158/11129）不再熔断整池；免费账号不可用（11158）在模型清单上标注；/v1/models 可按API Key 的模型限制过滤；一键部署区分 local/lan/public；OpenRouter 估价支持模型级校准系数；成长任务支持手动领取；面板改密以服务端结果为准；X-Private-Data 请求头可选；DSH 一键配置改写 profile 补丁层并放宽限流重试；另有移动端看板布局修复。飞牛侧跟上新增的 wb_entitlements.py 并保留统一网关免密入口与可写模型目录存档。",
+          "updated_at": "2026-10-20T21:53:36+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.13/WorkBuddy2API-Hub_1.7.13_all.fpk",
-              "sha256": "7fd2bd2dbb141944dc41db2df1974093344799c9eca758c1c273d535b2e334f8",
-              "size": 872207
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.17/WorkBuddy2API-Hub_1.7.17_all.fpk",
+              "sha256": "358fe211c5b8b463001fedec3dec6bffc4be9323d38760058c7bf22bb4f248d9",
+              "size": 905495
             }
           }
         }
