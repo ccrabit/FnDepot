@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.7.17": {
-          "changelog": "同步上游 v1.7.14 ~ v1.7.17：流式断流在首字节之前同账号同出口自动重开一次、出口退避改按「流读完」记账；流式 usage 按 OpenAI 契约放到末尾空 choices 帧（严格客户端不再提前结束）；模型级 5xx（11134/11102/11150/11158/11129）不再熔断整池；免费账号不可用（11158）在模型清单上标注；/v1/models 可按API Key 的模型限制过滤；一键部署区分 local/lan/public；OpenRouter 估价支持模型级校准系数；成长任务支持手动领取；面板改密以服务端结果为准；X-Private-Data 请求头可选；DSH 一键配置改写 profile 补丁层并放宽限流重试；另有移动端看板布局修复。飞牛侧跟上新增的 wb_entitlements.py 并保留统一网关免密入口与可写模型目录存档。",
-          "updated_at": "2026-10-20T21:53:36+08:00",
+        "1.7.24": {
+          "changelog": "同步上游 v1.7.18 ~ v1.7.24：国际版每日活跃的时段（1–24 个 HH:MM）、并发数、线性重试、当日去重、模型回退与随机提示词全部可配；API Key 可限制到账号白名单（/u/<ref> 定址到名单外 403）；/v1/models 可只列当前池里真能服务的模型；reasoning_effort 映射到模型目录声明的档位；全局提示词、出站身份版本号可在面板改；账号新增独立 tasksEnabled（enabled 只管取号）；流式断流不再伪造 [DONE]，改发标准 error 帧；热力图按本地日刷新；11-128 身份句与品牌组合指纹改写为中性句；成长任务补「无畏契约拼豆专家」；修全量刷新积分的 NameError 与消费倍率列截断。v1.7.23/v1.7.24 把「一键更新」扩到便携版与非 systemd 部署。飞牛侧跟上 wb_tiers / wb_webprompts / wb_update_portable / wb_update_apply / wb_update_external 五个新模块，统一网关免密入口与可写模型目录存档照旧，面板的「安装更新」按钮在飞牛上仍保持关闭（升级走应用中心或 FnDepot）。",
+          "updated_at": "2026-10-21T16:44:10+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.17/WorkBuddy2API-Hub_1.7.17_all.fpk",
-              "sha256": "358fe211c5b8b463001fedec3dec6bffc4be9323d38760058c7bf22bb4f248d9",
-              "size": 905495
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.24/WorkBuddy2API-Hub_1.7.24_all.fpk",
+              "sha256": "646a6d27c13cf78b291ee464029b63b2d72f8182c32788bc023c6db82e415ca5",
+              "size": 953846
             }
           }
         }
