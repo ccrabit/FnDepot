@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.7.24": {
-          "changelog": "同步上游 v1.7.18 ~ v1.7.24：国际版每日活跃的时段（1–24 个 HH:MM）、并发数、线性重试、当日去重、模型回退与随机提示词全部可配；API Key 可限制到账号白名单（/u/<ref> 定址到名单外 403）；/v1/models 可只列当前池里真能服务的模型；reasoning_effort 映射到模型目录声明的档位；全局提示词、出站身份版本号可在面板改；账号新增独立 tasksEnabled（enabled 只管取号）；流式断流不再伪造 [DONE]，改发标准 error 帧；热力图按本地日刷新；11-128 身份句与品牌组合指纹改写为中性句；成长任务补「无畏契约拼豆专家」；修全量刷新积分的 NameError 与消费倍率列截断。v1.7.23/v1.7.24 把「一键更新」扩到便携版与非 systemd 部署。飞牛侧跟上 wb_tiers / wb_webprompts / wb_update_portable / wb_update_apply / wb_update_external 五个新模块，统一网关免密入口与可写模型目录存档照旧，面板的「安装更新」按钮在飞牛上仍保持关闭（升级走应用中心或 FnDepot）。",
-          "updated_at": "2026-10-21T16:44:10+08:00",
+        "1.7.29": {
+          "changelog": "同步上游 v1.7.25 ~ v1.7.29：手机端四处布局修复（工具栏打卡按钮靠右、用量副行每项一行、账号卡出口与权重同行、窄屏「积分消耗」独占一行）；启动时补一次更新检查；便携更新保留 unix 权限位；保留历史版本备份并支持面板「版本回退」（request.json 增 action=install|rollback，失败自动恢复）；镜像部署按 profile=app 只替换应用层；账号档位改读计费摘要（IsPaidUser/包名落成 tier，失败不写结论）；11-128 继续收口（assistant 历史也清洗、DeepSeek Harness 缩成 DeepSeek、DSH GUI 句尾语序）；跨出口回退「国际版限流→国内版」默认关闭；账号表排序按主行+续行成组；uid 不再被手机号脱敏改写；API Key 的账号白名单与并发上限能落盘。飞牛侧保留统一网关免密入口与可写模型目录存档，面板「安装更新」在飞牛上仍关闭（升级走应用中心或 FnDepot）。",
+          "updated_at": "2026-10-22T21:34:32+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.24/WorkBuddy2API-Hub_1.7.24_all.fpk",
-              "sha256": "646a6d27c13cf78b291ee464029b63b2d72f8182c32788bc023c6db82e415ca5",
-              "size": 953846
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.29/WorkBuddy2API-Hub_1.7.29_all.fpk",
+              "sha256": "cbad6b2376b0c430e3646eca54dfcbfcabbeef7443158e0826289aa1d0c65929",
+              "size": 976767
             }
           }
         }
