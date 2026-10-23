@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.7.29": {
-          "changelog": "同步上游 v1.7.25 ~ v1.7.29：手机端四处布局修复（工具栏打卡按钮靠右、用量副行每项一行、账号卡出口与权重同行、窄屏「积分消耗」独占一行）；启动时补一次更新检查；便携更新保留 unix 权限位；保留历史版本备份并支持面板「版本回退」（request.json 增 action=install|rollback，失败自动恢复）；镜像部署按 profile=app 只替换应用层；账号档位改读计费摘要（IsPaidUser/包名落成 tier，失败不写结论）；11-128 继续收口（assistant 历史也清洗、DeepSeek Harness 缩成 DeepSeek、DSH GUI 句尾语序）；跨出口回退「国际版限流→国内版」默认关闭；账号表排序按主行+续行成组；uid 不再被手机号脱敏改写；API Key 的账号白名单与并发上限能落盘。飞牛侧保留统一网关免密入口与可写模型目录存档，面板「安装更新」在飞牛上仍关闭（升级走应用中心或 FnDepot）。",
-          "updated_at": "2026-10-22T21:34:32+08:00",
+        "1.7.30": {
+          "changelog": "并入上游 v1.7.30（自动任务）：上游自上一个已发布版本以来的全部改动，飞牛层（统一网关免密入口、面板主题与移动端适配、流式空闲心跳、可写模型目录存档、打包排除口径）保持原样。",
+          "updated_at": "2026-10-23T09:09:42+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.29/WorkBuddy2API-Hub_1.7.29_all.fpk",
-              "sha256": "cbad6b2376b0c430e3646eca54dfcbfcabbeef7443158e0826289aa1d0c65929",
-              "size": 976767
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.30/WorkBuddy2API-Hub_1.7.30_all.fpk",
+              "sha256": "a9eb968bba72c85d8e09bf153a63be7516d024bc79d2e16d2a2c806970cb9c56",
+              "size": 1009289
             }
           }
         }
