@@ -1,10 +1,10 @@
 {
   "schema_version": "2",
   "source_info": {
-    "name": "WorkBuddy2API-Hub FnDepot 源",
+    "name": "WorkBuddy2API-Hub 源",
     "author": "ccrabit",
     "homepage": "https://github.com/ccrabit/workbuddy2api-hub",
-    "description": "WorkBuddy2API-Hub 的 FnDepot 外部应用源（第三方自建，与 FnDepot 项目及官方无关）。"
+    "description": "WorkBuddy2API-Hub 的 FnDepot 外部源（第三方自建，与 FnDepot 项目及官方无关）。"
   },
   "apps": {
     "workbuddy2api": {
@@ -17,8 +17,8 @@
         "AI赋能",
         "系统工具"
       ],
-      "icon_url": "./ICON.PNG",
-      "readme_url": "./README.md",
+      "icon_url": "./fndepot/ICON.PNG",
+      "readme_url": "./fndepot/README.md",
       "bug_report_url": "https://github.com/ccrabit/workbuddy2api-hub/issues",
       "maintainer": "ardeyouxipianyi",
       "maintainer_url": "https://github.com/ardeyouxipianyi/workbuddy2api-hub",
@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.7.30": {
-          "changelog": "并入上游 v1.7.30（自动任务）：上游自上一个已发布版本以来的全部改动，飞牛层（统一网关免密入口、面板主题与移动端适配、流式空闲心跳、可写模型目录存档、打包排除口径）保持原样。",
-          "updated_at": "2026-10-23T09:09:42+08:00",
+        "1.7.33": {
+          "changelog": "并入上游 v1.7.31 ~ v1.7.33：每日活跃重构为「一个预算 + 一个候选序列」、失败收尾登记保留并迁移旧配置、登记表与被放弃的线程都加上界；模型级 429 冷却窗口重启后恢复、成功请求解除凭证失效标记；responses 补发工具调用首段参数增量；面板校正调色对比度并提示 HTTP 入口；上游自己补上流式 SSE 心跳（默认 15 秒），飞牛层改用上游实现并以 WB_STREAM_KEEPALIVE_SECONDS 覆盖。",
+          "updated_at": "2026-10-24T11:22:16+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.30/WorkBuddy2API-Hub_1.7.30_all.fpk",
-              "sha256": "a9eb968bba72c85d8e09bf153a63be7516d024bc79d2e16d2a2c806970cb9c56",
-              "size": 1009289
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.33/WorkBuddy2API-Hub_1.7.33_all.fpk",
+              "sha256": "fe4193de2156585ac93b946714b1b2c5a4ab29e5821ab02353b5763501a60c74",
+              "size": 1023096
             }
           }
         }
