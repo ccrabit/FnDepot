@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.7.33": {
-          "changelog": "并入上游 v1.7.31 ~ v1.7.33：每日活跃重构为「一个预算 + 一个候选序列」、失败收尾登记保留并迁移旧配置、登记表与被放弃的线程都加上界；模型级 429 冷却窗口重启后恢复、成功请求解除凭证失效标记；responses 补发工具调用首段参数增量；面板校正调色对比度并提示 HTTP 入口；上游自己补上流式 SSE 心跳（默认 15 秒），飞牛层改用上游实现并以 WB_STREAM_KEEPALIVE_SECONDS 覆盖。",
-          "updated_at": "2026-10-24T11:22:16+08:00",
+        "1.8.0": {
+          "changelog": "并入上游 v1.8.0：#647 国际版沙箱证书失败时降级到活跃上报、#644 stderr 日志通道不再阻塞请求线程、#643 桌面 chat 可选协议一致性、#640 更新检查超时放宽到 10 秒；上一轮起流式 SSE 心跳由上游 SSEHeartbeat 提供，飞牛层保留 WB_STREAM_KEEPALIVE_SECONDS 覆盖默认 15 秒。",
+          "updated_at": "2026-10-25T11:31:23+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.7.33/WorkBuddy2API-Hub_1.7.33_all.fpk",
-              "sha256": "fe4193de2156585ac93b946714b1b2c5a4ab29e5821ab02353b5763501a60c74",
-              "size": 1023096
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.8.0/WorkBuddy2API-Hub_1.8.0_all.fpk",
+              "sha256": "cc19a71fa6b80c6f8695c3cb22602aca323d2e9f8e6412c554f9a93faf31bbe9",
+              "size": 1024941
             }
           }
         }
