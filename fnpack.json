@@ -29,14 +29,14 @@
       "is_docker": false,
       "service_port": "8788",
       "releases": {
-        "1.8.0": {
-          "changelog": "1.8.0（重打包）：修掉数据看板在宽屏下只显示一列的问题——上游 v1.7.30 的 @media (max-width:860px) 与本层移动端兜底合并时漏了一个右花括号，把整个看板样式吞进了窄屏分支；同时新增样式守卫套件防止复发。其余内容与上游 v1.8.0 一致（#647 #644 #643 #640）。",
-          "updated_at": "2026-10-25T17:44:35+08:00",
+        "1.9.0.1": {
+          "changelog": "1.9.0.1（Phase U）：并入上游 v1.9.0 的 10 个社区 PR，并据此重估本层的换号重试。上游最要紧的一条是把「渠道校验」从抽样论改成内容指纹论 —— 这一版实测确认：DSH 的文件引用段（Tokens prefixed with @ are paths the user explicitly referenced…）进 system 就被上游连拒三次，插一个 that 立刻放行，所以上游新增 SANITIZE_DSH_FILEREF_RE 把它中和；本层据此把 WB_WAF_DUMP_DIR 改为默认关（真机单份 dump 对应 637 KB 正文、含用户内容）、换号预算 3 → 2（每次换号都要重传整条正文，实测 633 KB/次），中性提示兜底降级为「未入目录指纹」的安全网。同时拿到上游的账号可用性口径：401 认 WWW-Authenticate、6004 撞线保住「配额用尽」并落盘 model_windows.json、池空回 429 + Retry-After（不再 503）、/health 按区域与模型报可用数（accounts_by_realm / accounts_ready_by_realm / models_ready 等），以及看板窄屏三条、免费模型不占低额度预备金。套件 243 项（182 Python + 61 JS）。版本号沿用 fork 私有第四段。",
+          "updated_at": "2026-10-28T20:35:00+08:00",
           "packages": {
             "all": {
-              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.8.0/WorkBuddy2API-Hub_1.8.0_all.fpk",
-              "sha256": "3f98610c77d0375c909be14d15972c9752f98846c5f27aeb8dd1de63580d329f",
-              "size": 1027104
+              "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.9.0.1/WorkBuddy2API-Hub_1.9.0.1_all.fpk",
+              "sha256": "5b126a3734b948f6013ab54375cd78af9fca61870bbebf94cbeafd991e271b91",
+              "size": 1030102
             }
           }
         }
